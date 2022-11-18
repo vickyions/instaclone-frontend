@@ -1,0 +1,12 @@
+.postview {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.postview .card:last-child {
+    margin-bottom: 100px;
+}

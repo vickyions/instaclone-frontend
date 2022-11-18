@@ -1,0 +1,36 @@
+header {
+    position: sticky;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0.2em 0.2em 0 #eee;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin: 0 10px;
+    align-items: center;
+    color: limegreen;
+}
+
+.camera-icon {
+    font-size: 1.5em;
+    color: #9a9;
+}
+
+.icon {
+    font-size: 2em;
+}

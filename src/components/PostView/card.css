@@ -1,0 +1,63 @@
+.card {
+    min-width: 300px;
+    max-width: 500px;
+    margin: 40px 40px 0;
+    padding: 0 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 2px #eee;
+    font-size: 1em;
+}
+
+.card:hover {
+    box-shadow: 0 0 2px 4px #eee;
+}
+
+.card-head {
+    display: flex;
+    gap: 5px;
+    padding: 8px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-head-option {
+    font-size: 1.5em;
+}
+
+.card-action {
+    margin: 5px 15px;
+    display: flex;
+    gap: 5px;
+    font-size: 0.9em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-actions-icon {
+    font-size: 1.3em;
+    display: flex;
+    gap: 15px;
+    color: #666;
+}
+
+.card-desc {
+    margin: 0 15px;
+}
+
+.likes {
+    font-size: 0.9em;
+    margin: 2px 0 5px;
+}
+
+.desc {
+    margin: 0 0 10px;
+}
+
+.name, .desc {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.likes, .post-date, .location {
+    color: #777;
+}
