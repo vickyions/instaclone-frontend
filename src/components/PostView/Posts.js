@@ -1,12 +1,11 @@
-import React from 'react';
-import Postview from './Postview';
-import Navbar from './Navbar';
+import React from "react";
+import Navbar from "./Navbar";
 
-export default function Posts() {
+export default function Posts({ children }) {
     return (
         <>
             <Navbar />
-            <Postview />
+            {children}
         </>
-    )
+    );
 }
