@@ -6,8 +6,7 @@ import "./card.css";
 
 export default function Card(props) {
     const { name, location, likes, description, PostImage, date } = props.data;
-    const [d, m, y] = date.split("/");
-    const dateValue = new Date(`${parseInt(m) - 1}/${d}/${y}`).toLocaleString(
+    const dateValue = new Date(date).toLocaleString(
         "en-in",
         { year: "numeric", month: "short", day: "numeric" }
     );
@@ -26,7 +25,7 @@ export default function Card(props) {
 
             <div className="card-img">
                 <img
-                    src={require(`../../images/${PostImage}`)}
+                    src={PostImage}
                     alt={description}
                 />
             </div>
