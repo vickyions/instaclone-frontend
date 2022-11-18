@@ -4,6 +4,7 @@ import Posts from "./components/PostView/Posts";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Postview from "./components/PostView/Postview";
 import NewPost from "./components/PostView/NewPost";
+export const API_ADDRESS = "https://instaclone-backer.herokuapp.com/posts";
 
 function App() {
   return (
