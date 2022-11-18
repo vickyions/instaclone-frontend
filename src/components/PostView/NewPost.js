@@ -30,7 +30,6 @@ export default function NewPost() {
       formData.append("location", location);
       formData.append("description", description);
       formData.append("image", image);
-      console.log(formData);
       async function createPost(formData) {
         setIsUploading(true);
         const res = await fetch(API_ADDRESS, {
@@ -68,22 +67,24 @@ export default function NewPost() {
               onChange={onChangeHandler}
               required
             />
-            <input
-              type="text"
-              placeholder="Author"
-              name="name"
-              minLength="3"
-              onChange={onChangeHandler}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Location"
-              name="location"
-              minLength="3"
-              onChange={onChangeHandler}
-              required
-            />
+            <div className="inline-inputs">
+              <input
+                type="text"
+                placeholder="Author"
+                name="name"
+                minLength="3"
+                onChange={onChangeHandler}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Location"
+                name="location"
+                minLength="3"
+                onChange={onChangeHandler}
+                required
+              />
+            </div>
             <input
               type="text"
               placeholder="Description"
