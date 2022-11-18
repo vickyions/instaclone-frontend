@@ -1,7 +1,7 @@
 import React from "react";
 import "./Postview.css";
 import Card from "./Card";
-const API_ADDRESS = "https://instaclone-backer.herokuapp.com/posts";
+import { API_ADDRESS } from "../../App";
 
 export default function Postview() {
     const [cardsData, setCardsData] = React.useState([]);
