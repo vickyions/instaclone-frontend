@@ -27,6 +27,7 @@ export default function Postview() {
 
     return (
         <div className="postview">
+            {cardsData.length === 0 && <div className="loader">Loading Posts...</div>}
             {cardsData.length !== 0 &&
                 cardsData.map((card) => {
                     return <Card data={card} key={card._id} />;
