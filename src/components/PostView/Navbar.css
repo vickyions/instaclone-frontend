@@ -24,11 +24,13 @@ nav {
     margin: 0 10px;
     align-items: center;
     color: limegreen;
+    cursor: pointer;
 }
 
 .camera-icon {
     font-size: 1.5em;
     color: #9a9;
+    cursor: pointer;
 }
 
 .icon {

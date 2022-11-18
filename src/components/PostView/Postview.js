@@ -10,9 +10,13 @@ export default function Postview() {
         const controller = new AbortController();
         const signal = controller.signal;
         async function dataFetch() {
-            const res = await fetch(API_ADDRESS, { signal });
-            const data = await res.json();
-            setCardsData(data.posts);
+            try {
+                const res = await fetch(API_ADDRESS, { signal });
+                const data = await res.json();
+                setCardsData(data.posts);
+            } catch (err) {
+                console.log("previous post fetch request was aborted");
+            }
         }
         dataFetch();
 
