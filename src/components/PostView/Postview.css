@@ -10,3 +10,7 @@
 .postview .card:last-child {
     margin-bottom: 100px;
 }
+
+.loader {
+    margin-top: 10px;
+}
